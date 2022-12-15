@@ -1,0 +1,24 @@
+// CORE
+@import "variables";
+@import "bootstrap";
+@import "core";
+
+// NAVIGATION
+@import "main-menu";
+@import "header";
+@import "sm-header-menu";
+@import "scrollbar";
+
+// PAGE
+@import "home-slider";
+@import "block-decor-image";
+@import "block-code";
+@import "icons";
+@import "select-box";
+@import "block-alerts";
+@import "block-instructions";
+@import "loader";
+@import "footer";
+ 
+// MEDIA REQUIRES
+@import "media";

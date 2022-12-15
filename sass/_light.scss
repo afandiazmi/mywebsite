@@ -1,0 +1,177 @@
+/* LIGHT TYPOHRAPHY
+------------------------------------------------------------------*/
+body.light {
+    &.typography {
+        background: #333;
+    }
+    color: $main-light-font-color;
+    
+    /* link */
+    a {
+        color: $light-link-color;
+    }
+    
+    /* form input border */
+    input, textarea {
+        &::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 0.4 !important;
+        }
+        &::-moz-placeholder  { 
+            color: #fff;
+            opacity: 0.4 !important;
+        }
+        &:-moz-placeholder  {
+            color: #fff;
+            opacity: 0.4 !important;
+        }
+        &:-ms-input-placeholder  {
+            color: #fff;
+            opacity: 0.4 !important;
+        }
+    }
+    .form-control {
+        color: inherit;
+        border-bottom: 1px solid rgba(255, 255, 255, .6);
+    }
+    .form-control:focus {
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+    
+    /* block border */
+    .block-border-top:before {
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    .block-border-top:after {
+        border-right: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    .block-border-bottom:before {
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .block-border-bottom:after {
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    
+    /* blockquote */
+    blockquote {
+        background: url(../../lib/img/quotes-light.svg) no-repeat 6px 13px;
+        background-size: 56px 56px;
+        padding: 4px 25px 0 98px;
+        border: none;
+        margin-bottom: 19px;
+        font-size: inherit;
+        
+        p {
+            color: $main-light-font-color;
+        }
+        footer, small, .small {
+            color: $main-light-font-color
+        }
+    }
+    
+    /* checkbox/radio */
+    input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+        border: 2px solid #fff;
+    }
+    input[type="checkbox"]:checked + label:before {
+        background-image: url(../img/check-light.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    input[type="radio"]:checked + label:after {
+        background-color: #fff;
+    }
+    
+    /* select */
+    .jq-selectbox__dropdown > ul {
+        background-color: #333;
+        border: 1px solid #fff;
+    }
+    .jq-selectbox__dropdown li {
+        border-bottom: 1px solid #fff;
+    }
+    .jq-selectbox__trigger-arrow {
+        background-image: url(../img/select-arrow-light.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 13px;
+        width: 13px;
+    }
+    
+    /* header */
+    .bt-nav .line {
+        background: #fff;
+    }
+    
+    /* corner of section */
+    .border-top svg,
+    .border-bottom svg {
+        rect {
+            fill: $light-color-corners-section;
+        }
+    }
+
+    /* social link color */
+    .social>a {
+        color: inherit;
+    }
+    
+    /* form notify */
+    form.notify {
+        button {
+            .gl-send {
+                background-color: #fff;
+            }
+        }
+        &.wrong {
+            button {
+                .gl-send {
+                    background-color: red;
+                }
+            }
+        }
+    }
+    
+    /* about us section */
+    .team-portfolio-list .item>i {
+        color: inherit;
+    }
+    
+    /* feature slide */
+    .wrapper-feature-slide {
+        .border-center-icon {
+            &:before {
+                border-top: 1px solid rgba(255, 255, 255, .8);
+                border-left: 1px solid rgba(255, 255, 255, .8);
+            }
+            &:after {
+                border-top: 1px solid rgba(255, 255, 255, .8);
+                border-right: 1px solid rgba(255, 255, 255, .8);
+            }
+            span {
+                &:before {
+                    border-bottom: 1px solid rgba(255, 255, 255, .8);
+                    border-left: 1px solid rgba(255, 255, 255, .8);
+                }
+                &:after {
+                    border-bottom: 1px solid rgba(255, 255, 255, .8);
+                    border-right: 1px solid rgba(255, 255, 255, .8);
+                }
+            }
+        }
+    }
+}
+/* example for red corner of section */
+section.corner-red .border-top svg rect,
+section.corner-red .border-bottom svg rect {
+  fill: #ed1c24;
+}
+
+body.personal .border-top svg rect,
+body.personal .border-bottom svg rect {
+    fill: #0066f1;
+}

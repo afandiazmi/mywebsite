@@ -1,0 +1,1143 @@
+/* line 57, ../sass/configurator.scss */
+body * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+/* line 63, ../sass/configurator.scss */
+#customBtn {
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  width: 58px;
+  height: 58px;
+  z-index: 101;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+/* line 73, ../sass/configurator.scss */
+#customBtn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+/* line 78, ../sass/configurator.scss */
+#customBtn:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 100px;
+  top: -65px;
+  right: -50px;
+  transform: rotate(45deg);
+  background-color: #00c59c;
+  z-index: 0;
+}
+/* line 90, ../sass/configurator.scss */
+#customBtn svg {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 9px;
+}
+/* line 95, ../sass/configurator.scss */
+#customBtn svg path {
+  fill: #fff;
+}
+
+/* line 100, ../sass/configurator.scss */
+#customizeWrap {
+  width: 270px;
+  height: 100%;
+  background-color: #00c59c;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  right: -400px;
+  transition: right 0.3s;
+  	/* IE filters do not support multiple color stops.
+    	Generate 6 divs, line them up, and do two color gradients for each.
+    	Yes, really.  */
+}
+/* line 109, ../sass/configurator.scss */
+#customizeWrap.opened {
+  right: 0;
+  transition: right 0.3s;
+}
+/* line 113, ../sass/configurator.scss */
+#customizeWrap * {
+  outline: none;
+  box-sizing: border-box;
+}
+/* line 117, ../sass/configurator.scss */
+#customizeWrap a {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  border-bottom: 0;
+}
+/* line 122, ../sass/configurator.scss */
+#customizeWrap a:hover, #customizeWrap a:active, #customizeWrap a:focus {
+  text-decoration: none;
+  border-bottom: 0;
+}
+/* line 127, ../sass/configurator.scss */
+#customizeWrap p {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+/* line 131, ../sass/configurator.scss */
+#customizeWrap p:hover {
+  text-decoration: none;
+}
+/* line 135, ../sass/configurator.scss */
+#customizeWrap h4 {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+/* line 139, ../sass/configurator.scss */
+#customizeWrap .wrapper-block {
+  display: table;
+}
+/* line 143, ../sass/configurator.scss */
+#customizeWrap .hide {
+  display: none !important;
+}
+/* line 146, ../sass/configurator.scss */
+#customizeWrap .chBox, #customizeWrap .radioBtn {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-indent: 8px;
+  margin-top: 0;
+  margin-bottom: 7px;
+  margin-left: 20px;
+  font-size: 1em;
+  position: relative;
+  clear: both;
+  float: left;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+/* line 162, ../sass/configurator.scss */
+#customizeWrap .chBox:before, #customizeWrap .radioBtn:before {
+  content: '';
+  background-color: #fff;
+  display: block;
+  width: 17px;
+  height: 17px;
+  border: 0px;
+  border-radius: 3px;
+  float: left;
+  margin-top: 2px;
+}
+/* line 173, ../sass/configurator.scss */
+#customizeWrap .chBox:after, #customizeWrap .radioBtn:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 1px;
+}
+/* line 183, ../sass/configurator.scss */
+#customizeWrap input {
+  color: white;
+  background-color: #00c59c;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: color 0.2s, background-color 0.2s;
+}
+/* line 188, ../sass/configurator.scss */
+#customizeWrap input:focus, #customizeWrap input:active {
+  color: #111;
+  background-color: white;
+  transition: color 0.2s, background-color 0.2s;
+}
+/* line 195, ../sass/configurator.scss */
+#customizeWrap input[disabled="disabled"] + label {
+  opacity: 0.6;
+}
+/* line 197, ../sass/configurator.scss */
+#customizeWrap input[disabled="disabled"] + label:hover {
+  cursor: not-allowed;
+}
+/* line 201, ../sass/configurator.scss */
+#customizeWrap input[type="checkbox"]:checked + label::after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO9JREFUeNpi/P//PwO5gIlUDfLy8hpA3E2WZiDoBOLTJGsG2ugIpHSBeB1JmoEaQWp7gLj/4cOHf0i1OQaI5YB4PkkBBrSVC0i1AvEMoK1fSA3tIiAWBuJJyIKMcnJyIAO2AfENIC4FmvwbzVYJIHULiJcD5dJR4hko8A9IFwCxDxDvByqWRrO1EYi5gbgbayIBGgCy1QIqdgZogAPUVm0glQzEG4Fq7qBrZkROnkDFHNDQDAHiQiD2BmIPILYEaj6BVzPUAEaoU2tA8kB8BKjRFmswgjRjw8CAjAXin0Dsj0sNTs1QA0xBsYFLHiDAAJp0jt7XNGcNAAAAAElFTkSuQmCC);
+}
+/* line 204, ../sass/configurator.scss */
+#customizeWrap input[type="radio"]:checked + label::after {
+  background-color: #111;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 7px;
+  left: 5px;
+}
+/* line 213, ../sass/configurator.scss */
+#customizeWrap .radioBtn:before {
+  border-radius: 50%;
+}
+/* line 217, ../sass/configurator.scss */
+#customizeWrap .disable-hover * {
+  pointer-events: none !important;
+}
+/* line 222, ../sass/configurator.scss */
+#customizeWrap select {
+  display: block;
+  width: 228px;
+  height: 43px;
+  position: relative;
+  color: white;
+  background-color: #00c59c;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 6px;
+  border-radius: 3px;
+  margin: 11px auto 11px auto;
+  font-size: 1.02em;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  background-image: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+  transition: background-color 0.2s;
+}
+/* line 243, ../sass/configurator.scss */
+#customizeWrap select:active, #customizeWrap select:focus {
+  color: #111;
+  background-color: white;
+  transition: background-color 0.2s;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJRJREFUeNpiFBQUZKAEMDFQCJANWAPEDkTqc4CqZ2Dm5OSECZ4D4r1AfBSIH+HRbAvEG4E4HIjfIbvgDhCbA/F6ILbEodkSKm8GVY8RBreA2A6INwGxKZqcKVQc5ILb+ALxOhDbA/F2IDaCihlB+fZQeYKxcA0aUCBNulDaASpOdDReAWI3IF4Fpa9gU8RIaUICCDAAEW4aaNRtEbQAAAAASUVORK5CYII=);
+}
+/* line 249, ../sass/configurator.scss */
+#customizeWrap select:active option, #customizeWrap select:focus option {
+  color: #111;
+}
+/* line 253, ../sass/configurator.scss */
+#customizeWrap select option {
+  color: white;
+  font-weight: 300;
+}
+/* line 258, ../sass/configurator.scss */
+#customizeWrap button {
+  background-color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: #111;
+  border: 0;
+  line-height: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1em;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px #ccc inset;
+  transition: box-shadow 0.16s;
+  transition: background-color 0.16s;
+}
+/* line 271, ../sass/configurator.scss */
+#customizeWrap button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.92);
+  transition: background-color 0.16s;
+}
+/* line 276, ../sass/configurator.scss */
+#customizeWrap button:active {
+  border: none;
+  box-shadow: 0px 3px 1px #ccc inset;
+  transition: box-shadow 0.16s;
+  background-color: rgba(255, 255, 255, 0.92);
+  transition: background-color 0.16s;
+}
+/* line 285, ../sass/configurator.scss */
+#customizeWrap .colors-block {
+  overflow: hidden;
+  margin-left: 20px;
+  float: left;
+  max-width: 200px;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+/* line 292, ../sass/configurator.scss */
+#customizeWrap .colors-block span {
+  border: 3px solid white;
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  position: relative;
+}
+/* line 301, ../sass/configurator.scss */
+#customizeWrap .colors-block span:hover {
+  cursor: pointer;
+}
+/* line 305, ../sass/configurator.scss */
+#customizeWrap .colors-block span.activeLab:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111;
+  font-size: 0.6em;
+  text-align: center;
+  line-height: 1.8em;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 44%;
+  top: 0;
+  top: 2px;
+  left: 2px;
+}
+/* line 314, ../sass/configurator.scss */
+#customizeWrap #close-conf {
+  width: 100%;
+  height: 54px;
+  display: inline-block;
+  width: 55px;
+  float: right;
+  opacity: 0.6;
+  transition: opacity 0.25s;
+}
+/* line 322, ../sass/configurator.scss */
+#customizeWrap #close-conf:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background-color: #FFF;
+  transform: rotate(45deg);
+  top: 30px;
+  right: 14px;
+}
+/* line 333, ../sass/configurator.scss */
+#customizeWrap #close-conf:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background-color: #FFF;
+  transform: rotate(-45deg);
+  top: 30px;
+  right: 14px;
+}
+/* line 344, ../sass/configurator.scss */
+#customizeWrap #close-conf:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+/* line 350, ../sass/configurator.scss */
+#customizeWrap .title-option {
+  display: block;
+  border-bottom: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 49px;
+  font-size: 1.3em;
+  font-weight: 300;
+  padding-left: 19px;
+  position: relative;
+  clear: both;
+  transition: font-size 0.3s, line-height 0.3s;
+}
+/* line 361, ../sass/configurator.scss */
+#customizeWrap .title-option:hover {
+  border-bottom: none;
+}
+/* line 363, ../sass/configurator.scss */
+#customizeWrap .title-option:hover:after {
+  color: white;
+  transition: color 0.25s;
+}
+/* line 368, ../sass/configurator.scss */
+#customizeWrap .title-option:after {
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.25s;
+  position: absolute;
+  right: 15px;
+  display: inline-block;
+  line-height: 1.2em;
+}
+/* line 376, ../sass/configurator.scss */
+#customizeWrap .title-option.active {
+  line-height: 64px;
+  transition: font-size 0.3s, line-height 0.3s;
+}
+/* line 380, ../sass/configurator.scss */
+#customizeWrap .title-option.active:after {
+  color: white;
+}
+/* line 385, ../sass/configurator.scss */
+#customizeWrap .title-option.active.sel-device:before {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+/* line 392, ../sass/configurator.scss */
+#customizeWrap .title-option.sel-theme:after {
+  font-family: FontAwesome;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f06e";
+  top: 13px;
+  transition: top 0.25s;
+}
+/* line 398, ../sass/configurator.scss */
+#customizeWrap .title-option.sel-theme.active:after {
+  top: 21px;
+  transition: top 0.25s;
+}
+/* line 404, ../sass/configurator.scss */
+#customizeWrap .title-option.sel-style:after {
+  font-family: FontAwesome;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f013";
+  top: 13px;
+  transition: top 0.25s;
+}
+/* line 410, ../sass/configurator.scss */
+#customizeWrap .title-option.sel-style.active:after {
+  top: 21px;
+  transition: top 0.25s;
+}
+/* line 416, ../sass/configurator.scss */
+#customizeWrap .title-option.sel-device:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 100%;
+  background: url("../img/phone.svg") no-repeat;
+  background-position-y: 50%;
+  opacity: 0.3;
+  transition: opacity 0.25s;
+  right: 16px;
+}
+/* line 429, ../sass/configurator.scss */
+#customizeWrap .title-option.sel-device:hover:before {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+/* line 436, ../sass/configurator.scss */
+#customizeWrap .title-option.active + .slimScrollDiv {
+  height: auto !important;
+  transition: height 0.25s;
+}
+/* line 440, ../sass/configurator.scss */
+#customizeWrap .title-option + .slimScrollDiv {
+  height: 0 !important;
+  transition: height 0.25s;
+}
+/* line 448, ../sass/configurator.scss */
+#customizeWrap #deviceWrap {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-right: 8px;
+  border-right: 2px solid rgba(119, 119, 119, 0.2);
+}
+/* line 454, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div {
+  width: 48%;
+  float: left;
+  opacity: 0.6;
+  padding-top: 12px;
+  margin-bottom: 15px;
+  transition: opacity 0.25s;
+  position: relative;
+}
+/* line 462, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+/* line 467, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div:nth-child(odd) {
+  margin-left: 3.3%;
+}
+/* line 470, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div.activeLab {
+  opacity: 1;
+}
+/* line 472, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div.activeLab:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111;
+  font-size: 0.6em;
+  text-align: center;
+  line-height: 1.8em;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 44%;
+  top: 0;
+}
+/* line 477, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span {
+  width: 42px;
+  height: 34px;
+  display: block;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+/* line 484, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span:before, #customizeWrap #deviceWrap .wrapper-block div span:after {
+  box-sizing: content-box;
+}
+/* line 488, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.desktop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  margin-top: 30px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+/* line 497, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.desktop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 36px;
+  height: 25px;
+  margin-left: 1px;
+}
+/* line 506, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 32px;
+  height: 21px;
+  margin-left: 3px;
+  margin-top: 2px;
+}
+/* line 513, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 36px;
+  height: 0px;
+  margin-top: 25px;
+  border-width: 3px;
+}
+/* line 523, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.t-portrait:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  border-radius: 3px;
+  width: 22px;
+  height: 30px;
+  margin-left: 8px;
+}
+/* line 530, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.t-portrait:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-top: 26px;
+  margin-left: 19px;
+}
+/* line 538, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.t-landscape:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 32px;
+  height: 24px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+/* line 545, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.t-landscape:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-left: 31px;
+}
+/* line 553, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.p-portrait:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 30px;
+  margin-left: 9px;
+}
+/* line 559, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.p-portrait:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-top: 26px;
+  margin-left: 19px;
+}
+/* line 567, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.p-landscape:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 34px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+/* line 574, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div span.p-landscape:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-left: 32px;
+}
+/* line 583, ../sass/configurator.scss */
+#customizeWrap #deviceWrap .wrapper-block div p {
+  line-height: 1.3em;
+  font-size: 1em;
+  text-align: center;
+  margin: 3px auto;
+  max-width: 96px;
+}
+/* line 590, ../sass/configurator.scss */
+#customizeWrap #themeWrap {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-right: 8px;
+  border-right: 2px solid rgba(119, 119, 119, 0.2);
+}
+/* line 596, ../sass/configurator.scss */
+#customizeWrap #themeWrap .wrapper-block div {
+  width: 47%;
+  float: left;
+  padding-top: 12px;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 602, ../sass/configurator.scss */
+#customizeWrap #themeWrap .wrapper-block div:hover {
+  cursor: pointer;
+}
+/* line 605, ../sass/configurator.scss */
+#customizeWrap #themeWrap .wrapper-block div:nth-child(odd) {
+  margin-left: 3.8%;
+}
+/* line 609, ../sass/configurator.scss */
+#customizeWrap #themeWrap .wrapper-block div.activeLab:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111;
+  font-size: 0.6em;
+  text-align: center;
+  line-height: 1.8em;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 44%;
+  top: 0;
+}
+/* line 613, ../sass/configurator.scss */
+#customizeWrap #themeWrap .wrapper-block div img {
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+}
+/* line 618, ../sass/configurator.scss */
+#customizeWrap #themeWrap .wrapper-block div p {
+  line-height: 1.3em;
+  font-size: 1em;
+  text-align: center;
+  margin: 3px auto;
+  max-width: 96px;
+  padding-top: 4px;
+}
+/* line 627, ../sass/configurator.scss */
+#customizeWrap #stylesWrap {
+  padding-top: 11px;
+  margin-right: 8px;
+  border-right: 2px solid rgba(119, 119, 119, 0.2);
+}
+/* line 631, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option {
+  clear: both;
+  display: table;
+  width: 100%;
+  margin-bottom: 7px;
+}
+/* line 636, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option h4 {
+  font-size: 1.2em;
+  margin: 5px 19px 14px 19px;
+  line-height: 1.6em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* line 642, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option input {
+  width: 88%;
+  display: block;
+  height: 40px;
+  margin: 21px auto 11px auto;
+  padding-left: 11px;
+  border-radius: 3px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-bottom: 9px;
+  font-size: 1.02em;
+}
+/* line 652, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option input::-webkit-input-placeholder {
+  color: white;
+}
+/* line 655, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option input::-moz-placeholder {
+  color: white;
+}
+/* line 658, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option input.colorPick {
+  width: 71.5%;
+  margin-left: 20px;
+  float: left;
+  height: 31px;
+  margin-top: 7px;
+  margin-bottom: 4px;
+}
+/* line 667, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .sp-preview {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 14px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);
+}
+/* line 677, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .sp-preview:hover {
+  cursor: pointer;
+}
+/* line 680, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .sp-preview .sp-preview-inner {
+  border: 3px solid #fff;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 687, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .sp-preview span {
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 18px;
+  font-size: 1.7em;
+}
+/* line 699, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .check-option {
+  clear: both;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 9px;
+  opacity: 0.6;
+  transition: opacity 0.25s;
+}
+/* line 705, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .check-option:first-child {
+  margin-top: 3px;
+}
+/* line 709, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .check-option:hover {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+/* line 713, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .check-option.activeLab {
+  opacity: 1;
+  position: relative;
+}
+/* line 716, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option .check-option.activeLab:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111;
+  font-size: 0.6em;
+  text-align: center;
+  line-height: 1.8em;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 44%;
+  top: 0;
+  left: 106%;
+  top: 2px;
+}
+/* line 724, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div {
+  float: left;
+  width: 46%;
+  position: relative;
+  padding-top: 11px;
+  margin-top: 2px;
+  opacity: 0.6;
+  transition: opacity 0.25s;
+}
+/* line 732, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div.activeLab {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+/* line 735, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div.activeLab:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111;
+  font-size: 0.6em;
+  text-align: center;
+  line-height: 1.8em;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 44%;
+  top: 0;
+}
+/* line 739, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div:nth-child(even) {
+  margin-left: 3.5%;
+}
+/* line 742, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+/* line 747, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div span {
+  border: 2px solid white;
+  display: block;
+  margin: auto;
+  width: 41px;
+  height: 31px;
+  border-radius: 3px;
+}
+/* line 754, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div span.wide {
+  box-sizing: content-box;
+}
+/* line 756, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div span.wide:before {
+  content: '';
+  display: block;
+  width: 41px;
+  height: 15px;
+  margin-top: 6px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-sizing: content-box;
+}
+/* line 767, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div span.boxed {
+  box-sizing: content-box;
+}
+/* line 769, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div span.boxed:before {
+  content: '';
+  display: block;
+  width: 17px;
+  margin-left: 10px;
+  height: 31px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  box-sizing: content-box;
+}
+/* line 781, ../sass/configurator.scss */
+#customizeWrap #stylesWrap .option.boxed-mode div p {
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+/* line 790, ../sass/configurator.scss */
+#customizeWrap .sp-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  z-index: 9999994;
+  border-radius: 0;
+  background-color: #00c59c;
+  border: solid 1px rgba(255, 255, 255, 0.6);
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 806, ../sass/configurator.scss */
+#customizeWrap .sp-container * {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 812, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container {
+  width: 185px;
+  float: left;
+  position: relative;
+  padding-bottom: 300px;
+  margin-bottom: -290px;
+  margin-left: 42px;
+}
+/* line 819, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+/* line 826, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top .sp-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 20%;
+  border: solid 1px #666;
+}
+/* line 833, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top .sp-color .sp-sat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(rgba(204, 154, 129, 0)));
+  background-image: -webkit-linear-gradient(left, white, rgba(204, 154, 129, 0));
+  background-image: -moz-linear-gradient(left, white, rgba(204, 154, 129, 0));
+  background-image: -o-linear-gradient(left, white, rgba(204, 154, 129, 0));
+  background-image: -ms-linear-gradient(left, white, rgba(204, 154, 129, 0));
+  background-image: linear-gradient(to right, #ffffff, rgba(204, 154, 129, 0));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr=#FFFFFFFF, endColorstr=#00CC9A81)";
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr='#FFFFFFFF', endColorstr='#00CC9A81');
+}
+/* line 848, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top .sp-color .sp-sat .sp-val {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(black), to(rgba(204, 154, 129, 0)));
+  background-image: -webkit-linear-gradient(bottom, black, rgba(204, 154, 129, 0));
+  background-image: -moz-linear-gradient(bottom, black, rgba(204, 154, 129, 0));
+  background-image: -o-linear-gradient(bottom, black, rgba(204, 154, 129, 0));
+  background-image: -ms-linear-gradient(bottom, black, rgba(204, 154, 129, 0));
+  background-image: linear-gradient(to top, #000000, rgba(204, 154, 129, 0));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00CC9A81, endColorstr=#FF000000)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00CC9A81', endColorstr='#FF000000');
+}
+/* line 862, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top .sp-color .sp-sat .sp-val .sp-dragger {
+  border-radius: 5px;
+  height: 5px;
+  width: 5px;
+  border: 1px solid #fff;
+  background: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 876, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top .sp-hue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 84%;
+  height: 100%;
+  border: solid 1px #666;
+  background: -moz-linear-gradient(top, red 0%, yellow 17%, lime 33%, cyan 50%, blue 67%, magenta 83%, red 100%);
+  background: -ms-linear-gradient(top, red 0%, yellow 17%, lime 33%, cyan 50%, blue 67%, magenta 83%, red 100%);
+  background: -o-linear-gradient(top, red 0%, yellow 17%, lime 33%, cyan 50%, blue 67%, magenta 83%, red 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(0.17, yellow), color-stop(0.33, lime), color-stop(0.5, cyan), color-stop(0.67, blue), color-stop(0.83, magenta), to(red));
+  background: -webkit-linear-gradient(top, red 0%, yellow 17%, lime 33%, cyan 50%, blue 67%, magenta 83%, red 100%);
+}
+/* line 889, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top .sp-hue .sp-slider {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  height: 3px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid #000;
+  background: white;
+  opacity: .8;
+}
+/* line 901, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-top .sp-fill {
+  padding-top: 80%;
+}
+/* line 905, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-cf {
+  *zoom: 1;
+}
+/* line 907, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-cf:before {
+  content: "";
+  display: table;
+}
+/* line 911, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-picker-container .sp-cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 918, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-button-container {
+  float: right;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+/* line 924, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-button-container button {
+  line-height: 29px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-bottom: 22px;
+}
+/* line 929, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-button-container button:first-child {
+  margin-left: 42px;
+  float: left;
+}
+/* line 933, ../sass/configurator.scss */
+#customizeWrap .sp-container .sp-button-container button:last-child {
+  margin-right: 42px;
+  float: right;
+}
+/* line 944, ../sass/configurator.scss */
+#customizeWrap .sp-1 {
+  height: 17%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ffff00');
+}
+/* line 948, ../sass/configurator.scss */
+#customizeWrap .sp-2 {
+  height: 16%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff00', endColorstr='#00ff00');
+}
+/* line 952, ../sass/configurator.scss */
+#customizeWrap .sp-3 {
+  height: 17%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ff00', endColorstr='#00ffff');
+}
+/* line 956, ../sass/configurator.scss */
+#customizeWrap .sp-4 {
+  height: 17%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffff', endColorstr='#0000ff');
+}
+/* line 960, ../sass/configurator.scss */
+#customizeWrap .sp-5 {
+  height: 16%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000ff', endColorstr='#ff00ff');
+}
+/* line 964, ../sass/configurator.scss */
+#customizeWrap .sp-6 {
+  height: 17%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00ff', endColorstr='#ff0000');
+}
+/* line 968, ../sass/configurator.scss */
+#customizeWrap .sp-hidden {
+  display: none !important;
+}

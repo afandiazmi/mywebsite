@@ -1,0 +1,90 @@
+ @-webkit-keyframes rotate {
+   0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+       -webkit-transform-origin: 50%, 50%;
+    -moz-transform-origin: 50%, 50%;
+    -ms-transform-origin: 50%, 50%;
+    -o-transform-origin: 50%, 50%;
+    transform-origin: 50%, 50%;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+      -webkit-transform-origin: 50%, 50%;
+    -moz-transform-origin: 50%, 50%;
+    -ms-transform-origin: 50%, 50%;
+    -o-transform-origin: 50%, 50%;
+    transform-origin: 50%, 50%;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+      -webkit-transform-origin: 50%, 50%;
+    -moz-transform-origin: 50%, 50%;
+    -ms-transform-origin: 50%, 50%;
+    -o-transform-origin: 50%, 50%;
+    transform-origin: 50%, 50%;
+  }
+}
+
+@keyframes rotate {
+ 0% {
+    -webkit-transform: translate(-25px, -25px) rotate(0deg);
+    -ms-transform: translate(-25px, -25px) rotate(0deg);
+    transform: translate(-25px, -25px) rotate(0deg);
+     -webkit-transform-origin: 50%, 50%;
+    -moz-transform-origin: 50%, 50%;
+    -ms-transform-origin: 50%, 50%;
+    -o-transform-origin: 50%, 50%;
+    transform-origin: 50%, 50%;
+  }
+  50% {
+    -webkit-transform: translate(-25px, -25px) rotate(180deg);
+    -ms-transform: translate(-25px, -25px) rotate(180deg);
+    transform: translate(-25px, -25px) rotate(180deg);
+      -webkit-transform-origin: 50%, 50%;
+    -moz-transform-origin: 50%, 50%;
+    -ms-transform-origin: 50%, 50%;
+    -o-transform-origin: 50%, 50%;
+    transform-origin: 50%, 50%;
+
+  }
+  100% {
+    -webkit-transform: translate(-25px, -25px) rotate(360deg);
+    -ms-transform: translate(-25px, -25px) rotate(360deg);
+    transform: translate(-25px, -25px) rotate(360deg);
+      -webkit-transform-origin: 50%, 50%;
+    -moz-transform-origin: 50%, 50%;
+    -ms-transform-origin: 50%, 50%;
+    -o-transform-origin: 50%, 50%;
+    transform-origin: 50%, 50%;
+    
+  }
+}
+.page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 100500;
+  overflow: hidden;
+    
+    .spinner {
+        display: none;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        overflow: hidden;
+        background: url('../img/preloader.svg') no-repeat 50% 50%;
+        -webkit-animation: rotate 1s -0.4s infinite linear;
+        animation: rotate 1s -0.4s infinite linear;
+    }
+}

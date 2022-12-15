@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oceanside documentation</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+	  <link href="css/scroll-x.css" rel="stylesheet">
+	</head>
+<body data-spy="scroll" data-target="#mainNav"> 
+	<!-- MENU -->
+	<nav id="mainNav" class="offMenu" role="navigation">
+	  <span id="showMenuBtn">
+	    <span class="wrap-span">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	    </span>
+	    Contents 
+	    <span class="close-cross"></span>
+	  </span>
+	  <ul id="menuScrolling" class="nav">
+	    
+	    <li class="link-menu">
+	      <a href="#introduction">Introduction</a>
+	    </li>
+
+	    <li class="link-menu">
+	      <a href="#getting-started">Getting started</a>
+	    </li>
+		<li class="link-menu">
+			<a href="#installation">Installation</a>
+		</li>
+		<li class="link-menu">
+			<a href="#files-structure">Files Structure</a>
+		</li>
+		<li class="link-menu">
+			<a href="#preloader">Preloader</a>
+		</li>
+	    <li class="link-menu">
+	      <a href="#home-page">Structure Of The Site</a>
+	    </li>
+	    <li class="link-menu">
+	      <a href="#light-black-page">Light/Dark typography</a>
+	    </li>
+
+		<li class="drop-menu-btn">
+	      <a href="#header">Header</a>
+	      <ul class="nav">
+	        <li><a href="#logo">Logo</a></li>
+			<li><a href="#navigation">Navigation</a></li>
+	      </ul>
+	    </li>
+		
+		<li class="link-menu">
+	      <a href="#main">Main</a>
+	    </li>
+
+		<li class="link-menu">
+	      <a href="#footer">Footer</a>
+	    </li>
+
+	    <li class="drop-menu-btn">
+	      <a href="#elements">Elements</a>
+	      <ul class="nav">
+	        <li><a href="#notify-me">Notify Me</a></li>
+			<li><a href="#contact-form">Contact Form</a></li>
+			<li><a href="#map">Map</a></li>
+			<li><a href="#carousel">Carousel</a></li>
+			<li><a href="#full-video">Full Video</a></li>
+			<li><a href="#countdown">Countdown</a></li>
+			<li><a href="#corner">Corner of section</a></li>
+	      </ul>
+	    </li>
+		
+		<li class="link-menu">
+			<a href="#animation">Animation</a>
+		</li>
+		
+	  <li class="drop-menu-btn">
+	    <a href="#backgrounds">Backgrounds</a>
+		  <ul class="nav">
+			<li><a href="#bg-image">Image Background</a></li>
+			<li><a href="#bg-slider">Slider Background</a></li>
+			<li><a href="#bg-blur">Blur Background</a></li>
+			<li><a href="#bg-video">Video Background</a></li>
+			<li><a href="#bg-gradient">Gradient Background</a></li>
+			<li><a href="#bg-overlay">Background Overlay</a></li>
+		  </ul>
+	  </li>
+		
+		<li class="link-menu">
+			<a href="#retina">Retina</a>
+		</li>
+		
+		<li class="link-menu">
+			<a href="#scss">SCSS</a>
+		</li>
+		
+		<li class="link-menu">
+			<a href="#css-files">CSS Files</a>
+		</li>
+		
+		<li class="link-menu">
+			<a href="#js-files">JavaScript Files</a>
+		</li>
+	</ul>
+	<a href="#" id="more-btn">More...</a>
+	</nav>
+	<div id="interceptScroll"></div>
+
+	<!--  -->
+	<header class="header marginLeft">
+		<div class="main-top marginLeft">
+			<div class="container">
+				<div class="col-md-4 col-sm-4">
+					<span id="menuClickBtn" style="display:none;">
+						<span class="wrap-span">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					Contents</span>
+				</div>
+				<!--  -->
+				<div class="col-md-4 col-sm-4 col-xs-12" id="menuBtn">
+					<div class="logoBox" >
+						<div class="logo"></div>
+					</div>
+					<div id="smallMenu" class="animHide">
+						<a href="http://itembridge.com" class="smMenuLink">Itembridge</a>
+						<a href="http://support.itembridge.com/" class="smMenuLink">Help & Support</a>
+						<a href="http://themeforest.net/user/InfoStyle" class="smMenuLink">Envato Page</a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="col-md-4 col-sm-4 hidden-xs">
+					<a href="http://support.itembridge.com/" class="headerLinks supportIcon">Support</a>
+					<!-- <a href="#" class="headerLinks faqIcon">Faq</a> -->
+				</div>
+				<!--  -->
+			</div>
+		</div>
+		<!--  -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="home-promo">
+						<img src="img/bg-home.jpg" alt="photo">	
+						<div class="info-theme">
+							<p>revision #1 dated 01.12.2015</p>
+
+								<svg version="1.1" id="oceanside_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+										 y="0px" viewBox="0 0 130 15" style="enable-background:new 0 0 130 15;" xml:space="preserve">
+									<g id="oceanside">
+										<g>
+											<path style="fill: #333;clip-rule:evenodd;" d="M7.472,0.538c-2.067,0-3.807,0.69-5.22,2.07
+												c-1.413,1.38-2.12,3.097-2.12,5.15c0,2.053,0.707,3.77,2.12,5.15c1.413,1.38,3.153,2.07,5.22,2.07c2.067,0,3.807-0.69,5.22-2.07
+												c1.413-1.38,2.12-3.097,2.12-5.15c0-2.053-0.707-3.77-2.12-5.15C11.279,1.228,9.539,0.538,7.472,0.538z M10.432,10.948
+												c-0.8,0.873-1.783,1.31-2.95,1.31c-1.167,0-2.15-0.437-2.95-1.31c-0.8-0.873-1.2-1.933-1.2-3.18c0-1.247,0.4-2.31,1.2-3.19
+												s1.783-1.32,2.95-1.32c1.167,0,2.15,0.44,2.95,1.32c0.8,0.88,1.2,1.943,1.2,3.19C11.632,9.014,11.232,10.074,10.432,10.948z
+												 M25.092,3.518c1.467,0,2.693,0.613,3.68,1.84l1.94-2.2c-1.547-1.747-3.467-2.62-5.76-2.62c-2.053,0-3.79,0.693-5.21,2.08
+												c-1.42,1.387-2.13,3.117-2.13,5.19c0,2.073,0.697,3.79,2.09,5.15c1.393,1.36,3.167,2.04,5.32,2.04c2.153,0,4.023-0.893,5.61-2.68
+												l-2-2.06c-0.973,1.213-2.227,1.82-3.76,1.82c-1.12,0-2.073-0.393-2.86-1.18c-0.787-0.787-1.18-1.83-1.18-3.13
+												s0.417-2.333,1.25-3.1C22.915,3.901,23.919,3.518,25.092,3.518z M37.212,9.178h6.26v-2.66h-6.26v-2.88h6.96v-2.78h-10.08v13.98
+												h10.3v-2.76h-7.18V9.178z M52.392,0.858l-6.04,13.98h3.32l1.3-3.02h5.86l1.3,3.02h3.32l-6.04-13.98H52.392z M52.152,9.078
+												l1.76-4.06l1.74,4.06H52.152z M73.852,9.858l-6.86-9h-2.92v13.98h3.12v-8.76l6.66,8.76h3.12V0.858h-3.12V9.858z M87.321,6.448
+												c-1.327-0.327-2.173-0.61-2.54-0.85c-0.367-0.24-0.55-0.563-0.55-0.97c0-0.407,0.15-0.733,0.45-0.98
+												c0.3-0.247,0.71-0.37,1.23-0.37c1.293,0,2.547,0.46,3.76,1.38l1.58-2.28c-0.693-0.587-1.507-1.04-2.44-1.36
+												c-0.933-0.32-1.867-0.48-2.8-0.48c-1.427,0-2.617,0.36-3.57,1.08c-0.953,0.72-1.43,1.743-1.43,3.07c0,1.327,0.377,2.3,1.13,2.92
+												c0.753,0.62,1.943,1.123,3.57,1.51c1.027,0.253,1.713,0.503,2.06,0.75c0.347,0.247,0.52,0.58,0.52,1c0,0.42-0.163,0.753-0.49,1
+												c-0.327,0.247-0.777,0.37-1.35,0.37c-1.28,0-2.673-0.66-4.18-1.98l-1.86,2.28c1.773,1.64,3.767,2.46,5.98,2.46
+												c1.533,0,2.77-0.39,3.71-1.17c0.94-0.78,1.41-1.797,1.41-3.05c0-1.253-0.367-2.207-1.1-2.86
+												C89.678,7.264,88.648,6.774,87.321,6.448z M95.171,14.838h3.12V0.858h-3.12V14.838z M107.671,0.858h-4.94v13.98h4.78
+												c2.667,0,4.65-0.633,5.95-1.9c1.3-1.267,1.95-2.987,1.95-5.16c0-2.173-0.667-3.87-2-5.09
+												C112.077,1.468,110.164,0.858,107.671,0.858z M111.121,10.998c-0.767,0.72-1.863,1.08-3.29,1.08h-1.98v-8.5h1.74
+												c1.587,0,2.763,0.37,3.53,1.11c0.767,0.74,1.15,1.797,1.15,3.17C112.271,9.231,111.887,10.278,111.121,10.998z M122.231,12.078
+												v-2.9h6.26v-2.66h-6.26v-2.88h6.96v-2.78h-10.08v13.98h10.3v-2.76H122.231z"/>
+										</g>
+									</g>
+									</svg>
+
+
+								<h6>Coming Soon website template</h6>
+									<h5>User Guide</h5>
+						</div><!-- .logo -->
+
+						<div class="home-wrap-links">
+							<p class="support-icon">Support</p>
+							<a href="http://support.itembridge.com/">Do you need support? Just click!</a>
+							
+							<a class="link-block behance" href="https://www.behance.net/itembridge">
+								Follow us on Behance
+							</a>
+
+							<a class="link-block envato" href="http://themeforest.net/user/InfoStyle">
+								Follow us on Envato
+							</a>
+
+							<a class="link-block twitter" href="https://twitter.com/Itembridge">
+								Follow us on Twitter
+							</a>	
+
+							<a class="link-block facebook" href="https://www.facebook.com/ItemBridge">
+								Follow us on Facebook
+							</a>
+
+							<a class="link-block google-pl" href="https://plus.google.com/+Itembridge/videos">
+								Follow us on Google+
+							</a>								
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- PAGE CONTENT -->
+	<div class="page marginLeft">
+		<article class="article-block" id="introduction">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Introduction</h2>
+							<p>
+							<b>Oceanside</b> is a creative HTML template with modern design. It is suitable for every type of your business. Fully responsive, it is extremely beautiful on any device and is perfect in all window sizes. Template is packed with jquery countdown timer, mailchimp subscription form and ajax contact form and has extra pages – About, Services and Contacts.
+							</p>
+							<p>
+								Oceanside is easy to use and is great as a starting point for your custom projects. Powered with Bootstrap framework, designed with HTML5 and CSS3 technology. Enjoy its unique features!
+							</p>
+							<p>
+								Please do not forget to rate <b>Oceanside</b> on ThemeForest. This can be done in Downloads area. Just select <b>Oceanside</b> in the Download list and rate it. We really appreciate your feedback and will be grateful for your opinion.
+							</p>
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+							<div class="frame-window">
+								<img class="img-responsive" src="img/introduction/index-image1.jpg" alt="" />
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+							<div class="frame-window">
+								<img class="img-responsive" src="img/introduction/index-image2.jpg" alt="" />
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>	
+		<article class="article-block" id="getting-started">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Getting Started</h2>
+							<p>
+								This guide is targeted at people, who have <em>at least</em> basic knowledge of html markup language. Furthermore css and javascript knowledge is advised. If you do not feel yourself well with understanding these technologies you should consider finding someone to assist you.
+							</p>
+							<p>
+								This template can't be installed into any of available CMS (Wordpress, Drupal, etc.).
+							</p>
+							<p>
+							This documentation will demonstrate the custom elements used in template and help you with their customization.
+						</p>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		<article class="article-block" id="installation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Installation</h2>
+						<p>
+							Template installation is pretty easy. All required files are in every version so you can delete unused. Here are the required steps:
+						</p>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<ol>
+								<li>Unzip the HTML folder</li>
+								<li>Choose the desired variant</li>
+								<li>Rename it to index.html</li>
+								<li>Upload it through FTP</li>
+							</ol>
+						</div>
+					</div>						
+				</div>					
+			</div>
+			<hr class="full-width-line">
+		</article>
+		<article class="article-block" id="files-structure">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Files Structure</h2>
+						<p>
+							
+						</p>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<ul>
+								<li>lib/css/ - CSS styles folder</li>
+								<li>lib/fonts/ - webfont icons folder</li>
+								<li>lib/img/ - folder for images</li>
+								<li>lib/js/ - JavaScript files folder</li>
+								<li>lib/php/ - PhP files for your contact/mailchimp form
+								<li>lib/Video/ - folder with video</li>
+								<li>/sass/ - Syntactically Awesome Stylesheets files folder</li>
+								<li>index.html - main HTML file</li>
+							</ul>
+						</div>
+
+					</div>						
+				</div>					
+			</div>
+			<hr class="full-width-line">
+		</article>
+		<article class="article-block" id="preloader">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Preloader</h2>
+							<p>
+								Each page of this template contains a preloader code by default.
+							</p>
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+								<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"preloader"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"preloader"</span><span class="tag">&gt;&lt;/span&gt;&lt;/div&gt;</span></li></ol>
+								</pre>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="home-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Structure Of The Site</h2>
+							<p>
+								The obligatory structure of the site:
+							</p>
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+									<div class="code-block">
+										<pre class="copied">
+											<ol class="linenums"><li class="L0"><span class="tag">&lt;body&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-preloader"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"spinner"</span><span class="tag">&gt;&lt;/span&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"color-bg"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span><span class="com">&lt;!-- .background --&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;header</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'container'</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    ...</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;/header&gt;</span><span class="com">&lt;!-- .site-header --&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;main&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;section&gt;</span></li><li class="L1"><span class="pln">      ....</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/section&gt;</span></li><li class="L3"><span class="pln">    ...</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/main&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;footer&gt;</span></li><li class="L6"><span class="pln">    ...</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/footer&gt;</span></li><li class="L8"><span class="tag">&lt;/body&gt;</span></li></ol>
+										</pre>
+									</div>
+							</div>	
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="light-black-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Light/Dark typography</h2>
+							<p>
+								To make the light typography, add <code>class="light"</code> for <code>body</code>
+							</p>
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+									<div class="code-block">
+										<pre class="copied">
+											<ol class="linenums"><li class="L0"><span class="tag">&lt;body</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'light'</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ... </span></li><li class="L2"><span class="tag">&lt;/body&gt;</span></li></ol>
+										</pre>
+									</div>
+							</div>	
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h3>Header</h3>
+						<p>Header consists of 2 elements – Logo and Navigation.</p>
+						<div class="block-code-screen">				
+							<div class="frame-window">
+								<img class="img-responsive" src="img/img-1.jpg" alt="image">
+							</div>
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+								<div class="code-block">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;header</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'container'</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'brand pull-left'</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    Logo</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/figure&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav pull-right"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">    Menu</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="tag">&lt;/header&gt;</span></li></ol>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="logo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Logo</h4>
+						<p>Logo is located at the top-left of the template.</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'brand'</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"index.html"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/img/logo-dark.svg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"logo"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"160"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"30"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/a&gt;</span></li><li class="L4"><span class="tag">&lt;/figure&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Navigation</h4>
+						<p>Navigation switches between the page sections. The attribute meaning <code>href="#link1"</code> must respond to the section <code>id</code>
+							and <code>data-menuanchor="id"</code> must respond to the section <code>data-anchor="id"</code>.</p>
+						
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav pull-right"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;nav&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"section-menu"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">data-menuanchor</span><span class="pun">=</span><span class="atv">"id"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#id"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">          Link 1</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;/a&gt;</span></li><li class="L7"><span class="pln">      </span><span class="tag">&lt;/li&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/nav&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bt-nav"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"line line1"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"line line2"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"line line3"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Main</h2>
+						<p>You should add <code>main class="fullpage"</code> to activate one page mode.</p>
+						<div class="block-code-screen">				
+							<div class="code-wrapper">
+								<button class="copy-btn">Copy</button>
+								<div class="code-block">
+									<pre class="copied">
+										<ol class="linenums"><li class="L0"><span class="tag">&lt;main</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'fullpage main'</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;section&gt;</span></li><li class="L2"><span class="pln">    ...</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/section&gt;</span></li><li class="L4"><span class="pln">  ....</span></li><li class="L5"><span class="tag">&lt;/main&gt;</span><span class="pln">  </span></li></ol>
+									</pre>
+								</div>
+							</div>	
+						</div>	
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Footer</h2>
+						<div class="block-code-screen">				
+							<div class="frame-window">
+								<img class="img-responsive" src="img/img-2.jpg" alt="image">
+							</div>
+							<div class="code-wrapper">
+								<button class="copy-btn">Copy</button>
+								<div class="code-block">
+									<pre class="copied">
+										<ol class="linenums"><li class="L0"><span class="tag">&lt;footer&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"copyright"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;p&gt;</span><span class="pln">© Oceanside, 2015</span><span class="tag">&lt;/p&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/footer&gt;</span></li></ol>
+									</pre>
+								</div>
+							</div>	
+						</div>	
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="elements">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Elements</h2>
+							<p>Our template provides different html elements, which can be used in any way with any customization. </p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<ul>
+							<li><a href="#notify-me">Notify Me</a></li>
+							<li><a href="#contact-form">Contact Form</a></li>
+							<li><a href="#map">Map</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<ul>
+							<li><a href="#carousel">Carousel</a></li>
+							<li><a href="#full-video">Full Video</a></li>
+							<li><a href="#countdown">Countdown</a></li>
+							<li><a href="#corner">Corner of section</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="notify-me">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Notify Me</h4>
+						<p>By default all the information from this form is collected into the file  <code>emails.txt</code> which is located in the PHP directory.</p>
+						<p>This file also must have 'Write' permissions.</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"../lib/php/notify-me.php"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"notify"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"exampleInputEmail1"</span><span class="tag">&gt;</span><span class="pln">NOTIFY ME</span><span class="tag">&lt;/label&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"exampleInputEmail1"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"subscribe"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"Email"</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'btn-reset'</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">'Submit'</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"notify-btn-send"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="tag">&lt;/form&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+						<p class="alert alert-warning" role="alert"><strong>Warning!</strong> For better data security, it is recommended to change the name of the file and change this string <b>$file = fopen('../emails.txt','a+');</b> in the file <code>/php/u-c.php</code></p>
+						
+						<div class="block-code-screen">				
+							<div class="frame-window">
+								<img class="img-responsive" src="img/img-3.jpg" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="contact-form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Contact Form</h4>
+						<p>All data from this form is sent to the email, which can be edited in the file <code>php/mailConfig.php</code>.</p>
+						<div class="block-code-screen">				
+							<div class="frame-window">
+								<img class="img-responsive" src="img/img-4.jpg" width="976" height="593" alt="image">
+							</div>
+							<!--  -->
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+								<div class="code-block">
+									<pre class="copied">
+										<ol class="linenums"><li class="L0"><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">'../lib/php/contact-form.php'</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'contact-form'</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-sm-6"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"name"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">'name'</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-sm-6"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"email form-control"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"email"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">'email'</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group message"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;textarea</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">rows</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">wrap</span><span class="pun">=</span><span class="atv">'off'</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"message"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">'comment'</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/textarea&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'btn'</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="tag">&gt;</span><span class="pln">send</span><span class="tag">&lt;/button&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-message"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="kwd">display</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L9"><span class="tag">&lt;/form&gt;</span></li></ol>
+									</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="map">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Map</h4>
+
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied"><ol class="linenums"><li class="L0"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">data-target</span><span class="pun">=</span><span class="atv">"#map-address"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  Yout address</span></li><li class="L2"><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+							</div>
+						</div>
+
+						<p>Map should be in <code>modal</code> after <code>body</code></p>							
+						
+						<div class="block-code-screen">				
+							<div class="frame-window">
+								<img class="img-responsive" src="img/img-5.jpg" width="976" height="593" alt="image">
+							</div>
+							<!--  -->
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+								<div class="code-block">
+									<pre class="copied"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal fade"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"map-address"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"dialog"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"myModalLabel"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-dialog"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"document"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-content"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-body"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">          </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'btn'</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">aria-label</span><span class="pun">=</span><span class="atv">"Close"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/img/close-light.svg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"12"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"12"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">          </span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="pln">          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"map-canvas"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L8"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+								</div>
+							</div>
+						</div>
+
+						<p>GoogleMap element requires <code>API_KEY</code> for correct work.</p>
+						<p>Detailed information about getting API_KEY could be found here: <code>https://developers.google.com/maps/documentation/javascript/get-api-key</code></p>
+						<p>Just replace YOUR_API_KEY in the 'html' file with yours, that you will get by the link above:<br><code>https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initialize</code></p>
+						
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="carousel">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Carousel</h4>
+						<p>The carousel may contain full view of team or portfolio.</p>
+
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"preview-team-portfolio"</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">data-target</span><span class="pun">=</span><span class="atv">"#preview-team-portfolio-modal"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/a&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+							</div>
+						</div>
+
+						<p>It should be in <code>modal</code> after <code>body</code></p>
+						
+						<div class="block-code-screen">				
+							<div class="frame-window">
+								<img class="img-responsive" src="img/img-6.jpg" width="976" height="593" alt="image">
+							</div>
+							<!--  -->
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+								<div class="code-block">
+									<pre class="copied">
+										<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal fade"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"preview-team-portfolio-modal"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"dialog"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"myModalLabel"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-dialog"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"document"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-content"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-body"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'btn'</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">aria-label</span><span class="pun">=</span><span class="atv">"Close"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">          </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/img/close-light.svg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"12"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"12"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"team-portfolio-list"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"item"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;figure&gt;</span></li><li class="L0"><span class="pln">              </span><span class="tag">&lt;img</span><span class="pln">  </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'replace-2x img-responsive'</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/img/Oceanside/buisness-element-1.jpg"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">'360'</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">              </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"img-layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">              </span><span class="tag">&lt;figcaption&gt;</span></li><li class="L3"><span class="pln">                </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"social-team"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">                  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-dribbble"</span><span class="tag">&gt;&lt;/i&gt;&lt;/a&gt;</span></li><li class="L5"><span class="pln">                  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-facebook"</span><span class="tag">&gt;&lt;/i&gt;&lt;/a&gt;</span></li><li class="L6"><span class="pln">                  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-twitter"</span><span class="tag">&gt;&lt;/i&gt;&lt;/a&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;/p&gt;</span></li><li class="L8"><span class="pln">              </span><span class="tag">&lt;/figcaption&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;/figure&gt;</span></li><li class="L0"><span class="pln">            </span><span class="tag">&lt;h4&gt;</span><span class="pln">Felicity Novak</span><span class="tag">&lt;/h4&gt;</span></li><li class="L1"><span class="pln">            </span><span class="tag">&lt;i&gt;</span><span class="pln">Support Staff</span><span class="tag">&lt;/i&gt;</span></li><li class="L2"><span class="pln">          </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">          </span></li><li class="L4"><span class="pln">             .......</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;/div&gt;</span></li></ol>
+									</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="full-video">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Video Block</h4>
+
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"video-block col-md-8 col-md-offset-2"</span><span class="pln">  </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">data-target</span><span class="pun">=</span><span class="atv">"#video-block-modal"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/img/app-video.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-play"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-play"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;span&gt;&lt;/span&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/span&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/a&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+							</div>
+						</div>
+
+						<p>Video should be in <code>modal</code> after <code>body</code></p>
+
+						<div class="block-code-screen">				
+							<div class="frame-window">
+								<img class="img-responsive" src="img/img-7.png" width="976" height="593" alt="image">
+							</div>
+							<!--  -->
+							<div class="code-wrapper">
+								<button class="copy-btn" id="copybtn-id">Copy</button>
+								<div class="code-block">
+									<pre class="copied">
+										<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal fade"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"video-block-modal"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"dialog"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"myModalLabel"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-dialog"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"document"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-content"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-body"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">'btn'</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">aria-label</span><span class="pun">=</span><span class="atv">"Close"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">          </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/img/close-light.svg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"12"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"12"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;iframe</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"100%"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"100%"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"..."</span><span class="pln"> </span><span class="atn">frameborder</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">allowfullscreen</span><span class="tag">&gt;&lt;/iframe&gt;</span></li><li class="L8"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;/div&gt;</span></li></ol>
+									</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="countdown">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Countdown</h4>
+						<p>Insert the final date, to which the timer will count, in the data-attibute <code>data-date="Date"</code>.</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"countdown-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;h3</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"countdown days-left"</span><span class="pln"> </span><span class="atn">data-date</span><span class="pun">=</span><span class="atv">"Y, M, D"</span><span class="tag">&gt;&lt;/h3&gt;</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		<article class="article-block" id="corner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Corner of section</h4>
+						<p>Apply necessary color for corner in <code>_elements.scss</code> in the class <code>rect</code>.</p>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="animation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Animation</h2>
+						<p>You can choose the animation type for every page element – how it will appear after page downloading and how it will disappear after switching page sections. For this you will need to use the necessary attribute:</p>
+						<ul>
+							<li><code>data-animation</code> - animation while downloading</li>
+							<li><code>data-animation-delay</code> - animation delay while downloading</li>
+							<li><code>data-out-animation</code> - animation while switching to other page section</li>
+							<li><code>data-out-animation-delay</code> - animation delay while switching to other page section</li>
+						</ul>
+						<p>You can check how these animation types look like <a href="http://daneden.github.io/animate.css/">here</a>.</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+								<ol class="linenums"><li class="L0"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span></li><li class="L1"><span class="pln">  </span><span class="atn">data-animation</span><span class="pun">=</span><span class="atv">"fadeInDown"</span></li><li class="L2"><span class="pln">  </span><span class="atn">data-animation-delay</span><span class="pun">=</span><span class="atv">"600"</span></li><li class="L3"><span class="pln">  </span><span class="atn">data-out-animation</span><span class="pun">=</span><span class="atv">"fadeOutUp"</span></li><li class="L4"><span class="pln">  </span><span class="atn">data-out-animation-delay</span><span class="pun">=</span><span class="atv">"600"</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/a&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="backgrounds">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Backgrounds</h2>
+						<p>Our template supports different types of background. Image, Slider, Blur, Video and Gradient Backgrounds are at your disposal. So, how we can insert our background into the html code? Have a look:</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+								<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="bg-image">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Image Background</h4>
+						<p>Apply necessary background image in the file <code>_background.scss</code> for the class <code>static-bg</code>.</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-image static-bg"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="bg-slider">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Slider Background</h4>
+						<p>
+							To apply the Slider Version, you must add <code>class="slider-bg"</code> after <code>&lt;div class="bg-box"&gt;</code> and than add items.
+						</p>
+
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"slider-bg"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"item"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="kwd">background-image</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">url</span><span class="pun">(</span><span class="str">lib/img/background-2.jpg</span><span class="pun">);</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">    .....</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L5"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="bg-blur">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Blur Background</h4>
+						<p>You can change radius of blur image in main.js <code>function blurBg()</code>.</p>
+						
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-image blur-bg"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="bg-video">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Video Background</h4>
+						<p>
+							Video background effect doesn't work on tablets and phones. To enable the video background you should insert the class video-bg into the background block and write the path for the videos. For different web-browsers we need to upload different types of video. .mp4, .ogg, .webm are the needed ones.
+						</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"video-bg"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;video</span><span class="pln"> </span><span class="atn">autoplay</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">loop</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">muted</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;source</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/video/buisness.mp4"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"video/mp4"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;source</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/video/buisness.ogv"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"video/webm"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;source</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"lib/video/buisness.webm"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"video/ogg"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/video&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L9"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="bg-gradient">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Gradient Background</h4>
+						<p>Apply necessary background (Gradient Version) in the file <code>_background.scss</code>: for the image <code>.gradient-bg</code> and for gradient color <code>.gradient-bg + .layer</code>.</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-image gradient-bg"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="bg-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h4>Background Overlay</h4>
+						<p>Apply necessary color in the file <code>_background.scss</code> fo the <code>class="layer"</code> .</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied">
+									<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-box"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"layer"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+		
+		<article class="article-block" id="retina">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>Retina</h2>
+						<p>Retina Ready is a feature for displaying the high resolution images on the modern devices. It is created to show the true view of the HD images.</p>
+						<p>In our template to enable the Retina for images you should have two images:</p>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<ul>
+							<li>first one has the standard size and a standard name (<code>slide-2.jpg</code>)</li>
+							<li>second one must be <b>twice</b> bigger then the origin and have additional annex <i>@2x</i> (<code>slide-2@2x.jpg</code> </li>
+							</ul>
+						</div>
+						<p>Both images must be in the same folder!</p>
+						<p>So, how we can enable it in our html template? You should insert a class <code>replace-2x</code> into the 'img' tag. Example:</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied"><ol class="linenums"><li class="L0"><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"replace-2x"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"images/slide-2.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span></li></ol></pre>
+							</div>
+						</div>
+						<p>This is an example of CSS code that displays how we can connect our Retina image to the original image of the background:</p>
+						<div class="code-wrapper">
+							<button class="copy-btn" id="copybtn-id">Copy</button>
+							<div class="code-block">
+								<pre class="copied"><ol class="linenums"><li class="L0"><span class="pun">.</span><span class="pln">part-2 </span><span class="pun">{</span></li><li class="L1"><span class="pln">  background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'../images/slider/slide-2.jpg'</span><span class="pun">);</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="lit">@media</span><span class="pln"> </span><span class="pun">(-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">min</span><span class="pun">-</span><span class="pln">device</span><span class="pun">-</span><span class="pln">pixel</span><span class="pun">-</span><span class="pln">ratio</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">  </span><span class="pun">.</span><span class="pln">part-2 </span><span class="pun">{</span><span class="pln"> background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'../images/slider/slide-2@2x.jpg'</span><span class="pun">);</span><span class="pln"> </span></li><li class="L5"><span class="pln">  background</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> cover</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></li><li class="L6"><span class="pun">}</span></li></ol></pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="scss">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>SCSS</h2>
+							<p>
+							All SCSS files are located in the folder /sass/. SCSS is a CSS preprocessor that adds many features like variables, mixins, imports, color manipulation, functions and tons of other powerful features.
+						</p>
+						<p>
+							The entire compiler comes in a single class file ready for including in any kind of project in addition to a command line tool for running the compiler from the terminal.
+						</p>
+						<p>
+							The configuration of the paths for compilation is located in the file <i>config.rb</i>. The structure:
+						</p>
+						<ul>
+							<li>custom.scss - imports all styles</li>
+							<li>_variables.scss - file with variables used in theme styles</li>
+							<li>_typography.scss - the customization of fonts</li>
+							<li>_background.scss - file with background styles</li>
+							<li>_header.scss - file with header styles</li>
+							<li>_footer.scss - file with footer styles</li>
+							<li>_main.scss - file with main styles</li>
+							<li>_preloader.scss - file with preloader styles</li>
+							<li>_elements.scss - file with some elements styles</li>
+							<li>_intro.scss - file with intro page styles</li>
+							<li>_underconstruction.scss - file with underconstruction page styles</li>
+							<li>_light.scss - file with body.light styles</li>
+							<li>ie9.scss - file with IE9 styles</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="css-files">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>CSS Files</h2>
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover align-left">
+									<tbody>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Location</th>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>
+											</td>
+											<td>
+												Just-add-water CSS animations
+											</td>
+											<td>
+												lib/css/animate.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>
+											</td>
+											<td>
+												Styles for Font Awesome
+											</td>
+											<td>
+												lib/fonts/font-awesome/css/font-awesome.min.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+											</td>
+											<td>
+												Defines main Bootstrap classes
+											</td>
+											<td>
+												lib/css/bootstrap.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/kbwood/countdown/" target="_blank">Countdown</a>
+											</td>
+											<td>
+												jQuery Countdown styles
+											</td>
+											<td>
+												lib/css/jquery.countdown.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://www.owlcarousel.owlgraphic.com/" target="_blank">OWL Carousel</a>
+											</td>
+											<td>
+												Styles for OWL Carousel
+											</td>
+											<td>
+												lib/css/owl.carousel.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://manos.malihu.gr/jquery-custom-content-scroller" target="_blank">jQuery custom content scroller</a>
+											</td>
+											<td>
+												Styles for jQuery custom content scroller
+											</td>
+											<td>
+												lib/css/jquery.mCustomScrollbar.min.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">FullPage</a>
+											</td>
+											<td>
+												Styles for jQuery Fullpage plugin
+											</td>
+											<td>
+												lib/css/jquery.fullPage.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/theosp/SmoothDivScroll/" target="_blank">SmoothDivSCroll</a>
+											</td>
+											<td>
+												Styles for team/portfolio slider
+											</td>
+											<td>
+												lib/css/smoothDivSCroll.css
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Theme styles
+											</td>
+											<td>
+												Contains all of the specific stylings for the theme.
+											</td>
+											<td>
+												lib/css/custom.css<br>
+												lib/css/ie9.css<br>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<article class="article-block" id="js-files">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">	
+						<h2>JavaScript Files</h2>
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover align-left">
+									<tbody>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Location</th>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://jquery.com/" target="_blank">jQuery</a>
+											</td>
+											<td>
+												Core Javascript library
+											</td>
+											<td>
+												lib/js/jquery-1.11.2.min.js<br>
+												lib/js/jquery-ui-1.10.3.custom.min.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+											</td>
+											<td>
+												Sleek, intuitive, and powerful front-end framework for faster and easier web development
+											</td>
+											<td>
+												lib/js/bootstrap.min.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/jakiestfu/Blur.js/" target="_blank">Blur.js</a>
+											</td>
+											<td>
+												jQuery plugin that produces psuedo-transparent blurred elements over other elements
+											</td>
+											<td>
+												lib/js/blur.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">FullPage.js</a>
+											</td>
+											<td>
+												Create full screen pages
+											</td>
+											<td>
+												lib/js/jquery.fullPage.min.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/theosp/SmoothDivScroll/" target="_blank">SmoothDiv Scroll</a>
+											</td>
+											<td>
+												jQuery plugin that scrolls content horizontally left or right
+											</td>
+											<td>
+												lib/js/jquery.smoothdivscroll-1.3-min.js<br>
+												lib/js/jquery.mousewheel.min.js<br>
+												lib/js/jquery.kinetic.min.js
+
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://keith-wood.name/countdown.html" target="_blank">jQuery Countdown</a>
+											</td>
+											<td>
+												A jQuery plugin that sets a div or span to show a countdown to a given time.
+											</td>
+											<td>
+												lib/js/jquery.countdown.min.js<br>
+												lib/js/jquery.plugin.min.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://manos.malihu.gr/jquery-custom-content-scroller" target="_blank">jQuery custom content scroller</a>
+											</td>
+											<td>
+												Highly customizable custom scrollbar jQuery plugin.
+											</td>
+											<td>
+												lib/js/jquery.mCustomScrollbar.concat.min.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://www.owlcarousel.owlgraphic.com/" target="_blank">OWL Carousel</a>
+											</td>
+											<td>
+												Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.
+											</td>
+											<td>
+												js/owl.carousel.min.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/gilbitron/carouFredSel/">carouFredSel.js</a>
+											</td>
+											<td>
+												A circular, responsive carousel plugin built using the jQuery.
+											</td>
+											<td>
+												lib/js/carouFredSel.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="https://github.com/Dimox/jQueryFormStyler/">Form styler</a>
+											</td>
+											<td>
+												jQuery-plugin for styling HTML form
+											</td>
+											<td>
+												lib/js/jquery.formstyler.min.js
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Theme scripts
+											</td>
+											<td>
+												Contains all of the specific scripts for the theme.
+											</td>
+											<td>
+												js/main.js
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+			<hr class="full-width-line">
+		</article>
+
+		<!-- template -->
+	</div>
+  <!-- FOOTER -->
+	<footer class="footer marginLeft">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<p>Copyright © ItemBridge  inc., 2015 <span>Horn Theme </span>on Themeforest</p>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="https://dribbble.com/itembridge" class="fa fa-dribbble"></a>
+					<a href="https://www.behance.net/itembridge" class="fa fa-behance"></a>
+					<a href="https://plus.google.com/+Itembridge" class="fa fa-google-plus"></a>
+					<a href="https://twitter.com/Itembridge" class="fa fa-twitter"></a>
+					<a href="https://www.facebook.com/ItemBridge" class="fa fa-facebook"></a>				
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="alert-msg">
+		<p>Code copied to clipboard</p>
+	</div>
+	<!--js-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/ZeroClipboard.min.js"></script>
+	<script src="js/bootstrap.scrollspy.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js" type="text/javascript" ></script>
+	<script src="js/jquery.selectbox.min.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+	<script src="js/small-icons.js"></script>
+	<!-- ssi js-->
+	</body>
+</html>

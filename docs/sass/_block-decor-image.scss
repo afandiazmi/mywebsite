@@ -1,0 +1,189 @@
+.frame-window {
+	margin-top: 15px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	padding-left: 0;
+	padding-right: 0;
+	.wave-block {
+		margin-bottom: 30px;
+		img {
+			margin-bottom: 0;
+		}
+	}	
+	img {
+		background: rgb(229,229,229); /* Old browsers */
+		background: -moz-linear-gradient(-40deg,  rgba(229,229,229,1) 0%, rgba(229,229,229,1) 53%, rgba(236,236,236,1) 54%, rgba(236,236,236,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(53%,rgba(229,229,229,1)), color-stop(54%,rgba(236,236,236,1)), color-stop(100%,rgba(236,236,236,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(-40deg,  rgba(229,229,229,1) 0%,rgba(229,229,229,1) 53%,rgba(236,236,236,1) 54%,rgba(236,236,236,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(-40deg,  rgba(229,229,229,1) 0%,rgba(229,229,229,1) 53%,rgba(236,236,236,1) 54%,rgba(236,236,236,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(-40deg,  rgba(229,229,229,1) 0%,rgba(229,229,229,1) 53%,rgba(236,236,236,1) 54%,rgba(236,236,236,1) 100%); /* IE10+ */
+		background: linear-gradient(110deg, #e5e5e5 0%, #e5e5e5 54%, #ececec 54%, #ececec 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ececec',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		//
+		margin: auto;
+		margin-bottom: 27px;
+		position: relative;
+		border-radius: 4px;
+		padding: 22px 3px 4px 3px;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		background-image: url("../img/dots.svg");
+		background-repeat: no-repeat;
+		height: 8px;
+		width: 30px;
+		z-index: 1;
+		top: 6px;
+		left: 5px;
+	}
+	& + figcaption {
+		text-align: center;
+	}
+	.wrap-pie-block {
+		& .top {
+			top: -4px;
+		}
+	}
+}
+
+// 
+.block-code-screen {
+	margin-top: 45px;
+	margin-bottom: 45px;
+	.frame-window {
+		border-bottom: 0px;
+		img {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-radius: 4px 4px 0 0;
+		}
+	}
+	& > div {
+		&:first-child {
+			margin-bottom: 0;
+			margin-top: 0;
+			border-radius: 4px 4px 0 0;
+			border-width: 3px;
+			border-bottom-width: 0px;
+
+		}
+	}
+	& > div {
+		&:last-child {
+			margin-top: 0;
+			border-radius: 0 0 4px 4px;
+			border-width: 3px;
+		}
+	}
+	// 2 variant 
+	& > div {
+		&.wrap-pie-block:last-child {
+			border-top: 3px solid $bgGray;
+		}
+	}
+}
+// 3 variant
+.block-code-scr-col {
+	margin-top: 45px;
+	margin-bottom: 45px;
+	display: inline-block;
+	width: 100%;
+	border-radius: 4px;
+	pre {
+		overflow: hidden;
+		display: table;
+	}
+	.scroll-element {
+		width: 5px;
+		padding: 0;
+		&.scroll-y {
+			width: 12px;
+		}
+		&.scroll-x {
+			margin-left: 20px;
+		}
+	}
+	
+	& > div {
+		border: 0;
+		padding-left: 0;
+		padding-right: 0;
+		& > *:first-child {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.code-wrapper {
+			margin-top: 0;
+			margin-bottom: 0;
+			border:0;
+			border-radius: 0;
+			border-top: 3px solid $bgGray; 
+			border-bottom: 3px solid $bgGray;
+			padding-left: 0;
+			padding-right: 0;
+			&:before {
+				// content:"";
+				display: none;
+			}
+		}
+	}
+	& > div:first-child{
+		padding-right: 0;
+		& > .code-wrapper {
+			border: 3px solid $bgGray;
+			border-radius: 4px;
+		}
+		& > .wave-block {
+			border-radius: 4px 0 0 0;
+		}
+	}
+	& > div:last-child{
+		padding-left: 0;
+		& > .code-wrapper {
+			border: 3px solid $bgGray;
+			border-radius: 4px;
+		}
+		& > .wave-block {
+			border-radius: 0 0 4px 0;
+		}
+	}
+	.wave-block {
+		margin-bottom: 0;
+		.top {
+			top: -10px;
+		}
+		.bottom {
+			bottom: -10px;
+		}
+	}
+	.wave-bottom {
+		border-top: 3px solid $bgGray;
+	}
+	.wave-top {
+		border-bottom: 3px solid $bgGray;
+	}
+	// 
+	& > div {
+		& > .code-wrapper {
+			padding-top: 0;
+			padding-bottom: 0;
+
+		}
+	}
+	// stylize number lines 
+	.linenums {
+    margin-left:0; 
+    padding-left:0;
+    & > li {
+    	list-style-type: none;
+	    &:before {
+	    	display: none;
+			}
+    }
+	}
+}

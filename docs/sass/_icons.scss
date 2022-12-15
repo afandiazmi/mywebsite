@@ -1,0 +1,144 @@
+.galery-icon-wrap {
+	max-height: 10000px;
+	transition: max-height 0.25s;
+	overflow: hidden;
+	&.hideIcons {
+		max-height: 312px;
+		transition: max-height 0.45s;
+	}
+	h5 {
+		clear: both;
+		width: 100%;
+		padding-top: 30px;
+	}
+	.glyphicon {
+		width: 33%;
+	}
+	.fa {
+		width: 25%;
+	}
+	.glyphicon, .fa {
+		padding-top: 0;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		float: left;
+		font-size: 0.9em;
+		display: block;
+		padding: 7px 0;
+		font-weight: 300;
+		color: #111;
+		font-family: $font-family-base;
+		&:before {
+			width: 35px;
+			text-align: center;
+			display: inline-block;
+			transition: transform 0.2s;
+			transition: color 0.2s;
+			transform: scale(1);
+		}
+		@media (max-width: 1050px) {
+			width: 33%;
+		}
+		i {
+			transition: color 0.2s;
+			width: 30px;
+			text-align: center;
+		}
+		&:hover {
+			cursor: pointer;
+			&:before {
+				color: $mainThemeColor;
+				transform: scale(1.4);
+				transition: transform 0.2s;
+				transition: color 0.2s;
+			}
+		}
+	}
+	.glyphicon:before {
+		font-family: 'Glyphicons Halflings';
+	}
+	.fa:before {
+		font-family: FontAwesome;
+	}
+}
+// 
+.small-icon-wrap {
+	width: 20%;
+	float: left;
+	min-height: 120px;
+	text-align: center;
+	font-family: $font-family-base;
+	font-weight: 300;
+	img {
+		display: block;
+		margin: auto;
+		margin-bottom: 17px;
+		min-height: 34px;
+		transform: scale(1);
+		transition: transform 0.2s;
+	}
+	&:hover {
+		cursor: pointer;
+		img {
+			transform: scale(1.25);
+			transition: transform 0.2s;
+		}
+	}
+}
+
+.load-more-btn {
+	width: 98%;
+	margin-left: 12px;
+	color: #999;
+	height: 40px;
+	background-color: #F5f5f5;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	margin-top: 20px;
+	text-transform: none;
+	&:hover, &:focus:hover {
+		color: #fff;
+		box-shadow: none;
+		background-color: $mainThemeColor;
+		-webkit-transition: background-color 0.3s;
+		transition: background-color 0.3s;
+	}
+	&:focus {
+		color: #999;
+		background-color: #F5f5f5;
+		box-shadow: none;
+	}
+}
+
+@mixin sm-icon-styles {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: contain;
+}
+@mixin sm-icons-border {
+	border: 1px solid #ccc;
+}
+// 
+.sm-icon{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	svg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+	
+	// form
+	&.round {
+		@include sm-icons-border;
+		border-radius: 50%;
+	}
+	&.cube {
+		@include sm-icons-border;
+		border-radius: 3px;
+	}
+}

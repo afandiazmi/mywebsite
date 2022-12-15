@@ -1,0 +1,99 @@
+/* FONTS
+------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@font-face {
+    font-family: 'pf_dindisplay_promedium';
+    src: url('../fonts/pfdindisplaypro-med-webfont.eot');
+    src: url('../fonts/pfdindisplaypro-med-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdindisplaypro-med-webfont.woff2') format('woff2'),
+         url('../fonts/pfdindisplaypro-med-webfont.woff') format('woff'),
+         url('../fonts/pfdindisplaypro-med-webfont.ttf') format('truetype'),
+         url('../fonts/pfdindisplaypro-med-webfont.svg#pf_dindisplay_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pf_dindisplay_prolight';
+    src: url('../fonts/pfdindisplaypro-light-webfont.eot');
+    src: url('../fonts/pfdindisplaypro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdindisplaypro-light-webfont.woff2') format('woff2'),
+         url('../fonts/pfdindisplaypro-light-webfont.woff') format('woff'),
+         url('../fonts/pfdindisplaypro-light-webfont.ttf') format('truetype'),
+         url('../fonts/pfdindisplaypro-light-webfont.svg#pf_dindisplay_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* VARIABLES
+------------------------------------------------------------------*/
+$main-font-size: 18px;
+$main-font-color: #000;
+$main-light-font-color: #fff;
+$main-font-family: 'Lato', sans-serif;
+$second-font-family-medium: 'pf_dindisplay_promedium', sans-serif;
+$second-font-family-lighter: 'pf_dindisplay_prolight', sans-serif;
+
+$link-color: #373737;
+$light-link-color: #fff;
+$link-color-active: #a0a0a0;
+
+
+$main-font-size: 18px;
+$main-font-weight: 300;
+
+$color-corners-section: #000;
+$light-color-corners-section: #fff;
+
+$section-sm-top-padding: 120px;
+$section-sm-opacity: 0;
+$section-xs-top-padding: 30px;
+$section-xs-opacity: 0;
+$opacity: 0.8;
+
+$media-sm: 991px;
+$media-xs: 767px;
+
+/* HELPER MIXINS
+------------------------------------------------------------------*/
+@mixin opacity($o) {
+  $IEValue: $o * 100;
+  opacity: $o;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+      filter: alpha(opacity=$IEValue);
+}
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: 479px) { @content; }
+    }
+    @else if $media == mobile {
+        @media only screen and (max-width: 767px) { @content; }
+    }
+    @else if $media == wide-handhelds {
+        @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+    }
+    @else if $media == tablets {
+        @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+    }
+    @else if $media == tabdes {
+        @media only screen and (min-width: 768px) { @content; }
+    }
+} 
+
+@mixin border-radius($r) {
+  -webkit-border-radius: $r;
+     -moz-border-radius: $r;
+      -ms-border-radius: $r;
+          border-radius: $r;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

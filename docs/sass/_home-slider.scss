@@ -1,0 +1,181 @@
+.home-promo {
+	max-height: 378px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 3px;
+	img {
+		width: 100%;
+		margin-top: 0;
+	}	
+	.info-theme {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		text-align: center;
+		p {
+			color: #888;
+			text-align: right;
+			padding-right: 11px;
+			font-size: 0.7em;
+			font-weight: 400;
+			margin-top: 6px;
+
+		}
+		svg {
+			max-width: 200px;
+			margin-top: 22px;
+		}
+		h6 {
+			color: #888;
+			font-size: 0.9em;
+			font-weight: 400;
+			margin-top: 8px;
+		}
+		h5{
+			color: $mainThemeColor;
+			font-weight: 400;
+			font-size: 1.3em;
+			padding-top: 12px;
+		}
+	}
+	.home-wrap-links {
+		height: 80px;
+		width: 100%;
+		background-color: $mainThemeColor;
+		position: absolute;
+		bottom: 0;
+		.support-icon {
+			display: block;
+			position: absolute;
+			float: left;
+			color: #fff;
+			line-height: 80px;
+			font-size: 1.65em;
+			padding-left: 27px;
+			padding-right: 24px;
+			margin: 0;
+			border-right: 1px solid rgba(255, 255, 255, .5);
+			&:before {
+				content: '\f1cd';
+				@include fontAwesome;
+				color: #fff;
+				padding-right: 9px;
+			}
+			& + a {
+				color: #fff;
+				line-height: 80px;
+				font-weight: 300;
+				padding-left: 218px;
+				border-bottom: 0;
+				position: absolute;
+				&:hover {
+					border-bottom: 1px;
+				}
+			}
+		}
+		
+		.link-block {
+			width: 80px;
+			height: 80px;
+			float: right;
+			display: inline-block;
+			position: relative;
+			line-height: 80px;
+			color: #fff;
+			text-indent: 24px;
+			font-size: 1em;
+			font-weight: 300;
+			transition: width 0.23s;
+			&:hover, &:focus {
+				border-bottom: none;
+				transition: width 0.23s;
+			}
+			// icons 
+			&:before {
+				@include fontAwesome;
+				text-align: center;
+				color: #fff;
+				width: 80px;
+				height: 80px;
+				line-height: 80px;
+				display: block;
+				float: left;
+				font-size: 1.7em;
+				text-indent: 0;
+			}
+			&.behance {
+				background-color: darken($behanceColor, 5%);
+				&:before {
+					content:'\f1b4';					
+					background-color: $behanceColor;
+					font-size: 1.03em !important;				
+				}
+			}
+			&.envato {
+				background-color: darken($envatoColor, 5%);
+				&:before {
+					content:'';
+					background-color: $envatoColor;
+					background-repeat: no-repeat;
+					background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjdweCIgaGVpZ2h0PSIyN3B4IiB2aWV3Qm94PSIwIDAgMjcgMjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI3IDI3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cgk8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJCTwhW0NEQVRBWwoJCQkuc3Q3e2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I0ZGRkZGRjt9CgkJXV0+Cgk8L3N0eWxlPgoJPHN3aXRjaD4KCQk8cGF0aCBjbGFzcz0ic3Q3IiBkPSJNMTkuOSwzYzAsMC03LjUtMC4zLTkuOCw2LjhjLTEuNyw1LjUtMS4yLDcuNC0xLjIsNy40cy0xLjYsMC40LTEuOC0zLjFjLTAuMy0zLjQsMC42LTUuNiwwLjYtNS42ICBzLTMuOCwyLTMuNyw2LjJDNC4yLDE5LDcsMjQsMTMuOCwyNGM2LjgsMC4xLDkuNy03LjQsOS4yLTExLjdDMjIuNCw3LjksMjAuMiwzLjIsMTkuOSwzeiIvPgoJCTxmb3JlaWduT2JqZWN0IHdpZHRoPSIyNyIgaGVpZ2h0PSIyNyI+CgkJCTxzcGFuIGNsYXNzPSJmYSI+CgkJCQkmI3hmMGMxOwoJCQk8L3NwYW4+CgkJPC9mb3JlaWduT2JqZWN0PgoJPC9zd2l0Y2g+Cjwvc3ZnPg==);
+					background-position: 50% 50%;
+				}
+	
+			}
+			&.twitter {
+				background-color: darken($twitterColor, 5%);
+				&:before {
+					content:'\f099';
+					background-color: $twitterColor;
+					font-size: 1.4em !important;
+				}
+			}
+			&.facebook {
+				background-color: darken($facebookColor, 5%);
+				&:before {
+					content:'\f09a';
+					background-color: $facebookColor;
+					font-size: 1.3em;
+				}
+			}
+
+			&.google-pl {
+				background-color: darken($googleColor, 5%);
+				&:before {
+					content:'\f0d5';
+					background-color: $googleColor;
+					font-size: 1.3em;
+				}
+			}
+			// end icons
+		}
+	}
+}
+
+// width social button in hover
+.header {
+	.link-block {
+		&:hover {
+			cursor: pointer;
+			width: 468px;
+			@media screen and (max-width: 1100px) {
+				width: 80px;
+			}
+		}
+	}
+
+	&.marginLeft {
+		.link-block {
+			&:hover {
+				@media (min-width: 1210px) and (max-width: 1300px) {
+					width: 385px;
+				}
+				// @media screen and (max-width: 1210px) {
+				// 	width: 47.4%;
+				// }
+			}
+
+		}
+	}
+}

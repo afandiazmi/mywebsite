@@ -1,0 +1,144 @@
+/* SCROLL
+------------------------------------------------------------------*/
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_draggerRail,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 5px;
+    @include border-radius(0px);
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #363636;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #363636;
+    background-color: rgba(54,54,54,.05);
+    @include opacity(5);
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, 
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+    background-color: #363636;
+    background-color: rgba(54,54,54,.15);
+    @include opacity(15);
+}
+
+/* MODAL
+------------------------------------------------------------------*/
+.modal-backdrop.in {
+    @include opacity(0);
+    height: 100% !important;
+}
+.modal-body button {
+    margin: 0px 0 105px 0;
+}
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+.modal-open .modal {
+    padding: 0 !important;
+}
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin: -1px;
+    
+    @include respond-to(mobile) { 
+        margin: 10px auto;
+    }
+}
+.modal-content {
+    background-color: transparent;
+    border: none;
+    @include border-radius(0px);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 100%;
+}
+.modal-body {
+    padding: 15px 0;
+}
+
+/* CORNER OF SECTION
+------------------------------------------------------------------*/
+.border-top svg,
+.border-bottom svg {
+    position: absolute;
+    @include opacity(.6);
+    
+    rect {
+        fill: $color-corners-section;
+    }
+}
+
+.border-top  {
+    svg {
+        &.top-left-border {
+            left: 15px;
+            top: 0;
+        }
+        &.top-right-border {
+            right: 15px;
+            top: 0;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+}
+.border-bottom {
+    svg {
+        &.bottom-left-border {
+            left: 15px;
+            bottom: 0;
+            -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+        &.bottom-right-border {
+            right: 15px;
+            bottom: 0;
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+} 
+
+/* COUNTDOWN
+------------------------------------------------------------------*/
+span.countdown-amount:after {
+    content: " ";
+}
+span.countdown-period:after {
+    content: " ";
+}
+
+/* GOOGLE MAP
+------------------------------------------------------------------*/
+#map-canvas {
+    height: 55vh;
+}
+
+/* VIDEO-BLOCK
+------------------------------------------------------------------*/
+#video-block-modal  {
+    .modal-body {
+        width: 78%;
+        margin: 0 auto;
+    }
+    iframe {
+        border: 0;
+        height: 70vh;
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,0 +1,56 @@
+.instructions {
+	p + .instruction-block {
+		margin-top: 43px;
+	}
+}
+.instruction-block {
+	border: 1px solid $bgGray;
+	border-radius: 5px;
+	width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 19px 50px 16px;
+	margin-bottom: 28px;
+	&:last-child {
+		margin-bottom: 36px;
+	}
+	&.instruction-done {
+		border-color: $mainThemeColor;
+		&:after {
+			background-color: #d9fbf4;
+		}
+		.step-number {
+			color: $mainThemeColor;
+		}
+	}
+	.step-number {
+		z-index: 1;
+		position: absolute;
+		color: #bababa;
+		font-size: 1.35em;
+		padding-left: 17px;
+		padding-top: 10px;
+		top: 0;
+		left: 0;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			z-index: 0;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			width: 120px;
+			height: 120px;
+			background-color: #f7f7f7;
+			top: -59px;
+			left: -63px;
+			z-index: -1;
+		}
+	}
+	p {
+		& + .frame-window {
+			margin-top: 47px;
+		}
+	}
+}

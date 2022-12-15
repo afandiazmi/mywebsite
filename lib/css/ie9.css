@@ -1,0 +1,67 @@
+/* header */
+/* line 2, ../../sass/ie9.scss */
+.brand a {
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* show/hide link */
+/* line 10, ../../sass/ie9.scss */
+.show-link {
+  visibility: visible;
+}
+
+/* line 13, ../../sass/ie9.scss */
+.hide-link {
+  visibility: hidden;
+}
+
+/* about-us */
+/* line 18, ../../sass/ie9.scss */
+.team-portfolio-list .item figure p {
+  -webkit-transform: translate(0, 20%);
+  -ms-transform: translate(0, 20%);
+  -o-transform: translate(0, 20%);
+  transform: translate(0, 20%);
+}
+
+/* line 24, ../../sass/ie9.scss */
+.no-touch .team-portfolio-list .item figure:hover p,
+.team-portfolio-list .item.selected figure p {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+@media (max-width: 767px) {
+  /* line 35, ../../sass/ie9.scss */
+  main {
+    height: auto !important;
+    position: static !important;
+  }
+
+  /* line 39, ../../sass/ie9.scss */
+  .nav-close nav {
+    visibility: hidden;
+  }
+
+  /* line 42, ../../sass/ie9.scss */
+  .nav-open nav {
+    visibility: visible;
+  }
+
+  /* line 45, ../../sass/ie9.scss */
+  .section-menu {
+    right: 0;
+    text-align: right;
+    margin-right: 50px;
+    width: auto;
+    position: static;
+  }
+}

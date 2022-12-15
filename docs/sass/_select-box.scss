@@ -1,0 +1,76 @@
+.selectBox-dropdown {
+  height: 44px;
+  font-weight: 300;
+  font-size: 0.9em;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  outline: none;
+  color: $fontColor;
+  background-image: url("../img/down.png");
+  background-position: 95% center;
+  background-repeat: no-repeat; 
+  transition: border 0.2s;
+  &:hover {
+    color: $fontColor;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  .selectBox-disabled {
+    color: #888 !important;
+  }
+  &.selectBox-menuShowing {
+    border-bottom: none;
+    background-image: none;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid rgba(#aaa, .3);
+    box-shadow: 1px 3px 1px #eee, -1px 3px 1px #eee;
+    border-bottom: 0;
+    transition: border 0.2s;
+  }
+}
+.selectBox-label {
+  color: $fontColor;
+}
+/* Dropdown menu */
+.selectBox-dropdown-menu {
+  position: absolute;
+  z-index: 10;
+  max-height: 200px;
+  min-height: 1em;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 0;
+  background-color: #FFF;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 1px 3px 1px #eee, 
+              -1px 3px 1px #eee;
+  border: 1px solid rgba(#aaa, .3);
+  transition: border 0.2s;     
+  li {
+    list-style-type: none;
+    padding-left: 15px;
+
+    &.selectBox-selected {
+      background-image: url(../img/check.png);
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+    }
+    a {
+      border: 0;
+      font-size: 0.95em;
+      color: $fontColor;
+      display: block;
+      transition: color 0.2s;
+      &:hover {
+        color: #d5d5d5;
+        transition: color 0.2s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+  

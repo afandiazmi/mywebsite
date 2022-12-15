@@ -1,0 +1,88 @@
+/* UNDERCONSTRUCTION
+------------------------------------------------------------------*/
+.underconstruction {
+    
+    .bg-box {
+        .static-bg {    
+            background-image: url('../../lib/img/underconstruction.jpg');
+            
+            +.layer {
+                background: rgba(0, 0, 0, .6);
+            }
+        }
+    }
+    header {
+        position: static;
+        margin-top: 47px;
+        
+        .brand {
+            @include respond-to(mobile) { 
+                margin: 0;
+                position: relative;
+                z-index: 99;
+            }
+        }
+        .share {
+            line-height: 80px;
+            padding: 0;
+            text-align: right;
+
+            .share-button {
+                bottom: 3px;
+
+                > img {
+                    display: initial;
+                }
+            }
+            .social {
+                > a {
+                    margin: 0 0 0 6px;
+                    padding: 0 0 0 6px;
+                }
+            }
+            @include respond-to(mobile) {
+                line-height: 55px;
+            }
+        }
+        @include respond-to(mobile) {
+            margin-top: 25px;
+        }
+    }
+    main {
+        section {
+            padding-top: 25px;
+            margin: 0;
+            @include opacity(1);
+
+            .section-content-wrapper {
+                position: relative;
+                
+                .section-content {
+                    display: table-cell;
+                    vertical-align: middle;
+
+                    .section-main-title {
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+        @include respond-to(mobile) {
+            top: 0;
+            padding: 0;
+        }        
+    }
+    footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .copyright p {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding: 0;
+        }
+        @include respond-to(mobile) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        } 
+    }
+}

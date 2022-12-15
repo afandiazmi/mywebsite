@@ -1,0 +1,81 @@
+.bs-callout {
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+	&:before {
+	content: '';
+	display: block;
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	}	
+	p {
+		line-height: 1.5em;
+		padding: 18px 23px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h6 {
+		padding: 18px 23px;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	&.bs-callout-success {
+		h6 {
+			color: $brand-success;
+		}
+		background-color: rgba($brand-success, .05);
+		&:before {
+			background-color: $brand-success;
+		}
+	}
+	&.bs-callout-info {
+		h6 {
+			color: $brand-info;
+		}
+		background-color: rgba($brand-info, .05);
+		&:before {
+			background-color: $brand-info;
+		}
+	}
+	&.bs-callout-warning {
+		h6 {
+			color: $brand-warning;
+		}
+		background-color: rgba($brand-warning, .05);
+		&:before {
+			background-color: $brand-warning;
+		}
+	}
+	&.bs-callout-danger {
+		h6 {
+			color: $brand-danger;
+		}
+		background-color: rgba($brand-danger, .05);
+		&:before {
+			background-color: $brand-danger;
+		}
+	}
+
+}
+
+.alert {
+	border: 0;
+	color: #fff;
+	&.alert-success {
+		background-color: $brand-success;
+	}
+	&.alert-info {
+		background-color: $brand-info;
+	}
+	&.alert-warning {
+		background-color: $brand-warning;
+	}
+	&.alert-danger {
+		background-color: $brand-danger;
+	}
+}

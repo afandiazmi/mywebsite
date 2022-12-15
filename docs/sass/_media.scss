@@ -1,0 +1,92 @@
+@media screen and (max-width: $tablets) {
+	#mainNav {
+		height: 100%;
+		& + #interceptScroll {
+			height: 100%;
+		}
+		&.closeMenu {
+			& + #interceptScroll {
+				height: 1px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablets-portrait) {
+	.chBox, .radioBtn {
+		display: table;
+	}
+	.header {
+		.main-top{
+			.container {
+				.headerLinks {
+					margin-left: 20px;
+				}
+			}
+		}  
+	}	
+	.home-promo {
+		.home-wrap-links {
+			.support-icon {
+				border-right: 0;
+				& + a {
+					display: none;
+				}
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: $phones) {
+	.container {
+		& > div {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.footer {
+		height: 100px;
+		p {
+			width: 100%;
+			text-align: center;
+		}
+		.fa {
+			float: left;
+		}
+	}
+	#menuClickBtn {
+		position: absolute;
+		padding-left: 12px;
+		z-index: 3;
+	}
+}
+
+// container change width
+@media (min-width: 1200px) {
+	.marginLeft {
+		position: relative;
+		width: calc(100% - 270px) !important;
+		left: 270px;
+		transition: left 0.4s;
+	}
+} 
+@media (min-width: $onSlideLMenu) and (max-width: 1300px) {
+		.header {
+		&.marginLeft {
+			.container {
+				width: 924px;
+			}
+		}
+	}
+	.page {
+		&.marginLeft {
+			.container {
+				width: 924px;
+			}
+		}
+		.container {
+			width: 924px;
+		}
+	}
+}
+		

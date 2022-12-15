@@ -1,0 +1,121 @@
+.header {
+	background-color: $bgGray;
+	transition: left 0.4s;
+	.main-top {
+		background-color: #FFF;
+		opacity: 0.96;
+		border-bottom: $borderBMenu;
+		min-height: 64px;
+		position: fixed;
+		width: 100%; 
+		z-index: 11; 
+		top: 0;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		& + .container {
+			padding-top: 63px;
+			.row {
+				padding-top: 28px;
+				padding-bottom: 28px;
+			}
+		}
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+			a {
+				color: $menuTxtColor;
+			}
+			#menuClickBtn {
+				font-size: 1em;
+				display: inline-block;
+				margin-top: 19px;
+				font-weight: 300;	
+				padding: 0;
+				height: 32px;
+				background-color: transparent;
+				border-bottom: none;
+				color: $menuTxtColor;
+				@include usrSelectNone;
+				@include textTransition;
+				&:hover {
+					text-decoration: none;
+					color: #111;
+					cursor: pointer;
+					background-color: transparent;
+					@include textTransition;
+					.wrap-span {
+						span {
+						background-color: #111;
+						@include bgTransition;
+						}
+					}
+				}
+				&:focus {
+					box-shadow: none;
+				}
+			}
+			.headerLinks {
+				float: right;
+				padding-top: 15px;
+				color: #c5c5c5;
+				margin-left: 40px;
+				position: relative;
+				transition: color 0.2s;
+				font-weight: 300;
+				border-bottom: none;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				&:hover, &:focus {
+					text-decoration: none;
+					color: $mainThemeColor;
+					transition: color 0.2s;
+					&.faqIcon:before {
+						color: $mainThemeColor;
+						border: 2px solid $mainThemeColor;
+						transition: color 0.2s, border 0.2s;
+					}
+					&.supportIcon:before {
+						color: $mainThemeColor;
+						transition: color 0.3s, border 0.2s;
+					}
+				}
+				&.faqIcon:before {
+					content: "i";
+					display: inline-block;
+					border: 2px solid #c5c5c5;
+					border-radius: 50%;
+					behavior: url(/support/css/PIE.htc);
+					text-align: center;
+					width: 27px;
+					height: 27px;
+					font-weight: bold;
+					position: static;
+					line-height: 26px;
+					margin-right: 6px;
+					transition: color 0.3s, border 0.2s;
+					position: relative;
+					top: 2px;
+				}
+				&.supportIcon:before{
+					content: "\f1cd";
+					color: #c5c5c5;
+					display: inline;
+					@include fontAwesome;
+					font-size:26px;
+					padding-left: 3px;
+					padding-right: 3px;
+					margin-right: 3px;
+					padding-top: 4px;
+					padding-bottom: 4px;
+					border-radius: 3px;
+					behavior: url(/support/css/PIE.htc);
+					text-decoration: none;
+					transition: color 0.7s, border 0.2s;
+					position: relative;
+					top: 3px;
+				}
+			}	
+			// 
+		}
+	}
+}
